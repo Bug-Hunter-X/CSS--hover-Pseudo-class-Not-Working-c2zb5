@@ -1,0 +1,12 @@
+The issue was resolved by ensuring that the CSS rule for the button's hover state had higher specificity than other conflicting styles.  This was achieved by adding more precise selectors or using the !important flag (though this should be used sparingly).  Also, checking for any JavaScript that might be overriding the styles was crucial. Below is a corrected version:
+
+```css
+button {
+  background-color: lightblue;
+}
+
+button:hover {
+  background-color: blue !important;
+}
+```
+The '!important' flag forces the hover style to take precedence.  However, consider refactoring your CSS to avoid needing '!important' by adjusting specificity of selectors.
