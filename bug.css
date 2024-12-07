@@ -1,0 +1,1 @@
+The following CSS code snippet demonstrates an issue where the expected behavior of the `:hover` pseudo-class is not working correctly.  The button is supposed to change background color upon hover, but it doesn't. This is unexpected because the CSS selector should correctly target the button element.
